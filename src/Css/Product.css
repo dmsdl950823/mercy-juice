@@ -1,0 +1,15 @@
+.sProductWrap > div:first-child {
+  margin-bottom: 16px;
+}
+
+.sProduct {
+  width: 330px;
+  height: 330px;
+}
+
+.bProduct {
+  width: 676px;
+  height: 676px;
+  background-color: violet;
+  margin: 0 15px;
+}

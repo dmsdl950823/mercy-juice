@@ -1,0 +1,99 @@
+.backgroundWrapper {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+}
+
+.backgroundColor {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.backgroundColor > li {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -10;
+}
+
+.backgroundColor > li.on {
+  z-index: -8;
+}
+
+.back_division {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.beforeBack {
+  width: 40%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.backgroundColor > li.on > div > i {
+  background-color: #cce1e8;
+}
+
+.backgroundColor > li > div > i {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 40%;
+  height: 100%;
+  float: left;
+  
+}
+
+.backgroundColor > li > div > span {
+  position: relative;
+  display: block;
+  width: 60%;
+  height: 100%;
+  float: right;
+  transition: 4s ease;
+}
+
+.backgroundColor > li {
+  transition-delay: 0.2s;
+  transition: 2s ease;
+  background-color: transparent;
+}
+
+.backgroundColor span {
+  opacity: 0;
+}
+.back0 span {
+  opacity: 1;
+}
+
+.backgroundColor > li > div > span:after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  content: '';
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+}
+
+.back0 span:after {
+  background: url(../images/bck_img1.jpg) no-repeat 15vw -15vh fixed;
+}
+.back1 span:after {
+  background: url(../images/bck_img2.jpg) no-repeat 15vw -15vh fixed;
+}
+.back2 span:after {
+  background: url(../images/bck_img3.jpg) no-repeat -20vw 0 / 100% 0;
+}

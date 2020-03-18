@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="stylesheet" href="animate.min.css">
+
+    <title>React App</title>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+  </body>
+
+  <script>
+    disableZoom();
+
+    function disableZoom() {
+      document.body.addEventListener('keydown', function(e) {
+        if (
+          e.ctrlKey == true &&
+          (e.which == '61' ||
+            e.which == '107' ||
+            e.which == '173' ||
+            e.which == '109' ||
+            e.which == '187' ||
+            e.which == '189')
+        ) {
+          e.preventDefault();
+        }
+      });
+
+      document.body.addEventListener('wheel', function(e) {
+        if (
+          (e.ctrlKey == true && e.deltaY > 0) ||
+          (e.ctrlKey == true && e.deltaY < 0)
+        ) {
+          e.stopImmediatePropagation();
+          e.stopPropagation();
+        }
+      });
+    }
+  </script>
+</html>
